@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
-
+    {% include mathjax_support.html %}
     {% if site.google_analytics %}
       <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
       <script>
@@ -11,8 +11,9 @@
         gtag('config', '{{ site.google_analytics }}');
       </script>
     {% endif %}
-    {% include mathjax_support.html %}
-    <meta charset="UTF-8">
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS_CHTML-full">
+    </script>
 
 {% seo %}
     <meta name="viewport" content="width=device-width, initial-scale=1">
