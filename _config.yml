@@ -7,3 +7,4 @@ incremental: false
 collections:
   notes:
     output: true
+theme: jekyll-theme-cayman
