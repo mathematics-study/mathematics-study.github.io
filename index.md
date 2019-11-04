@@ -7,10 +7,6 @@
 
 {% for post in site.notes %}
   {% if post.url contains "/prob-stats/" %}
-    <li>
-      <a href="{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </li>
+* [{{ post.title }}]({{ post.url }})
   {% endif %}
 {% endfor %}
